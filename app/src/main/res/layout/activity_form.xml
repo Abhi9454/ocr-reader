@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.google.android.gms.samples.vision.ocrreader.form">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:id="@+id/name"
+            android:layout_margin="10dp"
+            android:padding="10dp"/>
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:hint="Father name"
+            android:id="@+id/father"
+            android:layout_margin="10dp"
+            android:padding="10dp"/>
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:hint="DOB"
+            android:id="@+id/dob"
+            android:layout_margin="10dp"
+            android:padding="10dp"/>
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/address"
+            android:layout_margin="10dp"
+            android:hint="Address"/>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Attach Document"
+            android:layout_margin="10dp"
+            android:padding="10dp"/>
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/upload"
+            android:layout_margin="10dp"
+            android:id="@+id/image" />
+        
+    </LinearLayout>
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/submit"
+        android:text="Submit"/>
+
+</RelativeLayout>
